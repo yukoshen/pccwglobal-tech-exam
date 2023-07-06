@@ -45,5 +45,19 @@ Method: DELETE </br></br>
 Endpoint: http://localhost:8080/v1/user/delete?ids=1,2,3 </br>
 Method: DELETE </br>
 Request Parameter / Query Params: Key = ids, Value = 1,2,3</br></br></br>
+### Running the application via Docker
+Visit this link in dockerhub - https://hub.docker.com/repository/docker/kjsiador/pccw-tech-exam/general <br>
+1. Pull the image from docker hub by running this command
+```Poweshell
+docker image pull kjsiador/pccw-tech-exam
+```
+2. Check if you successfully pulled the docker image by running this command
+```Poweshell
+docker images
+```
+3. Run the image in your local powershell by running this command
+```Poweshell
+docker container run -p 8080:8080 kjsiador/pccw-tech-exam
+```
 
 
